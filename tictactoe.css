@@ -10,6 +10,7 @@
 }
 h1{
     color:rgb(206, 86, 30);
+    padding-top: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,11 +35,10 @@ right-border{
     border-bottom: .2em solid rgb(22, 5, 5);
 }
 
-
-player1 {
-
-}
-
-player2 {
-
+.game-over {
+    text-emphasis-color: black;
+    background-color: rgb(192, 228, 163);
+    width: 9em;
+    height: 5em;
+    margin: auto;
 }

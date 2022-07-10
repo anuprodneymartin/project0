@@ -36,7 +36,7 @@ const checkWinner = function(){
     $('#1').ready
 });
 
-
+//Need to add a draw function, learn adding images, sounds/muscic.
 
 console.log('Hello')
 
