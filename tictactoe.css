@@ -41,4 +41,6 @@ right-border{
     width: 9em;
     height: 5em;
     margin: auto;
+    text-align: center; 
+    padding-top: 4em;
 }

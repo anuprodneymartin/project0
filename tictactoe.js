@@ -6,6 +6,8 @@ $(document).ready(function (){
             turns++
             if(checkWinner()){
                 $('.game-over').text('Player 1  wins!')
+            }else if(checkBoxesFull() ){
+                $('.game-over').text('The game is DRAWN, better luck next time');
             }
         }else if ($(this).text() === '' && turns%2 !== 1) {
             $(this).text('0');
@@ -33,10 +35,19 @@ const checkWinner = function(){
     return false;
 
 };
-    $('#1').ready
+const checkBoxesFull = function (){
+    let output = true
+    $('.box').each(function(){
+        const boxContent = $(this).text()
+        if (boxContent === ''){
+            output = false
+        }
+    })
+    return output;
+}
 });
 
-//Need to add a draw function, learn adding images, sounds/muscic.
+//learn adding images, sounds.
 
 console.log('Hello')
 
